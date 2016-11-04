@@ -16,19 +16,36 @@
 
 <script>
 
-function rec(arr){
-    arr.forEach (function(item, i) {
-        if (arr[i] instanceof Array) {
-            rec(arr[i]);
-        }
-        else {
-            console.log(arr[i]);
-        }
-    })
 
+var endArr = [];
+    function rec(arr){
+        arr.forEach (function(item, i) {
+            if (arr[i] instanceof Array) {
+                rec(arr[i]);
+            }
+            else {
+                endArr.push(arr[i]);
+            }
+        })
 
-}
-console.log(rec([1, 2, [3, 4, [5, 6] ,7], [8, 9]]));
+    }
+endArr.push(rec([1, 2, [3, 4, [5, 6] ,7], [8, 9]]));
+    console.log(endArr);
+
+/*
+ function rec(arr){
+ arr.forEach (function(item, i) {
+ if (arr[i] instanceof Array) {
+ rec(arr[i]);
+ }
+ else {
+ console.log(arr[i]);
+ }
+ })
+
+ }
+ console.log(rec([1, 2, [3, 4, [5, 6] ,7], [8, 9]]));
+ */
 
 </script>
 
