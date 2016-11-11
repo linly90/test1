@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>animation</title>
+
+
+
+	<style>
+
+	.zabor {
+		position: absolute;
+	}
+	
+
+	.boo {
+		position: absolute;
+	   	top: 37%;
+	   	left: 12%;
+   	animation-duration: 5s;
+   	visibility: hidden;
+   	animation-fill-mode: forwards;
+
+	}
+	.piggy {
+		position: absolute;
+	   	top: 53%;
+	   	left: 60%;
+   	animation-duration: 5s;
+   	visibility: hidden;
+
+	}
+	
+
+	.zab {
+		position: absolute;
+		top: 59%;
+		left: 57%;
+	}
+   .pingv {
+   	width: 6%;
+   	position: absolute;
+	   	top: 2%;
+	   	left: 1%;
+   	animation-duration: 15s;
+   	animation-fill-mode: forwards;
+
+
+   }
+
+   	   .green {
+   	width: 6%;
+   	position: absolute;
+      	top: 37%;
+   		left: 1%;
+   	animation-duration: 5s;
+   animation-fill-mode: forwards;
+
+
+   }
+
+   	   .angr {
+   	width: 6%;
+   	position: absolute;
+	   	top: 82%;
+	   	left: 1%;
+   	animation-duration: 5s;
+  animation-fill-mode: forwards;
+	animation-delay: 0.3s;
+
+   }
+
+  
+
+
+ .animation	table {
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		background-image: url("https://www.firestock.ru/wp-content/uploads/2013/09/Fotolia_41649201_Subscription_Monthly_XXL.jpg");
+		
+	}	
+
+.animation {
+	     width: 1400px;
+		height: 500px;
+		position: relative;
+		
+    
+}
+
+
+
+.column {
+	border: 1px solid;
+}
+
+
+
+
+
+.first {
+	background-color: yellow;
+    animation-name: firstt;
+    animation-duration: 1s;
+    animation-iteration-count:infinite;
+}
+
+
+.flag {
+	background-image: url(image/ping1.png);
+	width: 120px;
+	height: 120px;
+	animation-name: flag;
+	animation-duration: 0.5s;
+    animation-iteration-count:infinite;
+
+}
+
+
+
+
+#anim1 {
+	animation-name: flag_anim1;
+	animation-duration: 15s;
+	position: absolute;
+	   	top: 90%;
+	   	left: 15%;
+}
+
+#anim2 {
+	animation-name: flag_anim2;
+	animation-duration: 15s;
+	position: absolute;
+	   	top: 90%;
+	   	left: 23%;
+}
+
+
+
+#anim3 {
+	animation-name: flag_anim3;
+	animation-duration: 15s;
+	position: absolute;
+	   	top: 90%;
+	   	left: 55%;
+}
+
+
+
+
+
+
+.animation:hover .pingv{
+	animation-name: pingi;
+}
+
+.animation:hover .green{
+	animation-name: greeny;
+}
+
+.animation:hover .angr{
+	animation-name: angry;
+}
+
+
+.animation:hover #anim3{
+	animation-name: flag_anim3;
+}
+
+.animation:hover #anim2{
+	animation-name: flag_anim2;
+}
+.animation:hover #anim1{
+	animation-name: flag_anim1;
+}
+
+.animation:hover .boo{
+	animation-name: booo;
+	visibility: visible;
+
+	
+}
+
+
+.animation:hover .piggy {
+    animation-name: pig;
+	visibility: visible;
+
+}
+
+
+
+
+
+
+
+@keyframes flag_anim3 {
+	0% {
+		top: 90%;
+		left: 55%;
+	}
+
+	7% {
+		top: 70%;
+		left: 55%;
+	}
+	12% {
+		top: 70%;
+		left: 70%;
+	}
+	20% {
+		top: 4%;
+		left: 70%;
+	}
+	40% {
+		top: 1%;
+		left: 65%;
+	}
+	45% {
+		top: 25%;
+		left: 60%;
+	}
+	50% {
+		top: 20%;
+		left: 45%;
+	}
+
+	53% {
+		top: 18%;
+		left: 45%;
+	}
+	56% {
+		top: 20%;
+		left: 45%;
+	}
+	59% {
+		top: 18%;
+		left: 45%;
+	}
+
+	62% {
+		top: 20%;
+		left: 45%;
+	}
+
+	65% {
+		top: 20%;
+		left: 45%;
+	}
+
+	68% {
+		top: 18%;
+		left: 45%;
+	}
+	71% {
+		top: 20%;
+		left: 45%;
+	}
+	74% {
+		top: 18%;
+		left: 45%;
+	}
+
+	77% {
+		top: 20%;
+		left: 45%;
+	}
+
+
+
+
+	90% {
+		top: 20%;
+		left: 45%;
+	}
+
+
+	100% {
+		top: 90%;
+		left: 55%;
+	}
+
+}
+
+
+@keyframes pingi {
+    0% {top: 2%;
+    	left: 1%;
+		}
+
+	15% {
+		top: 2%;
+		left: 25%;
+	}
+
+	25% {
+		top: 20%;
+		left: 30%;
+
+	}
+
+	30% {
+		top: 17%;
+		left: 35%;
+
+	}
+	35% {
+		top: 17%;
+		left: 45%;
+		transform: rotateY(0deg);
+	}
+	37% {
+		top: 17%;
+		left: 45%;
+		transform: rotateY(360deg);
+	}
+	38% {
+		top: 17%;
+		left: 45%;
+		transform: rotate(-90deg);
+	}
+
+	80%{
+
+		top: 17%;
+		left: 45%;
+		transform: rotate(-90deg);
+	}
+	90%{
+
+		top: 17%;
+		left: 45%;
+		transform: rotate(0deg);
+	}
+
+    100% {
+
+    	top: 2%;
+    	left: 1%;
+    	
+    }
+}
+
+
+@keyframes greeny {
+    0% {top: 37%;
+    	left: 1%;
+		}
+
+	30%	{
+		top: 37%;
+		left: 15%;
+		
+	}
+	33% {top: 37%;
+		left: 15%;
+		transform: rotate(0deg);
+	}
+
+
+	40%{
+		top: 37%;
+		left: 15%;
+		transform: rotate(-90deg);
+
+	}
+	45% {
+		top: 37%;
+		left: 15%;
+		transform: rotate(-90deg);
+	}
+	70% {
+		top: 37%;
+		left: 1%;
+		transform: rotate(-90deg);
+
+	}
+
+	85% {
+		top: 37%;
+		left: 1%;
+		transform: rotate(0deg);
+	}
+	100% {
+		top: 37%;
+    	left: 1%;
+	}
+	
+}
+
+
+@keyframes angry {
+    0% {top: 82%;
+    	left: 1%;
+		}
+
+	20%	{
+		top: 42%;
+		left: 15%;
+	}
+	25% {
+		
+		top: 42%;
+		left: 15%;
+	}
+	50% {
+		top: 42%;
+		left: 40%;
+		transform: rotate(270deg);
+	}
+	55% {
+		top: 42%;
+		left: 46%;
+		transform: rotate(270deg);
+	}
+
+	
+	60% {
+		top: 42%;
+		left: 63%;
+		transform: rotate(90deg);
+
+	}
+
+	62% {
+		top: 45%;
+		left: 63%;
+		transform: rotate(90deg);
+
+	}
+	90% {
+		top: 110%;
+		left: 120%;
+		transform: rotate(360deg);
+
+	}
+	92% {
+		top: 82%;
+    	left: -50%;
+		}
+
+	100% {
+		top: 82%;
+    	left: 1%;
+	}	
+	}
+	
+
+
+@keyframes pig {
+	0% {
+		top: 53%;
+		left: 60%;
+	}
+	30% {
+		top: 53%;
+		left: 60%;
+	}
+
+
+
+
+
+
+	60% {
+		top: 55%;
+		left: 60%;
+		transform: rotate(0deg);
+	}
+	70% {
+		top: 38%;
+		left: 60%;
+		transform: rotate(360deg);
+	}
+
+	80% {
+		top: 53%;
+		left: 60%;
+
+	} 
+	83% {
+		top: 49%;
+		left: 60%;
+	} 
+	86% {
+		top: 53%;
+		left: 60%;
+	} 
+	89% {
+		top: 49%;
+		left: 60%;
+	} 
+	92% {
+		top: 53%;
+		left: 60%;
+	} 
+	95% {
+		top: 49%;
+		left: 60%;
+	} 
+
+	98% {
+		top: 53%;
+		left: 60%;
+	} 
+	100% {
+		top: 49%;
+		left: 60%;
+	} 
+
+	89% {
+		top: 49%;
+		left: 60%;
+	} 
+	92% {
+		top: 53%;
+		left: 60%;
+	} 
+	95% {
+		top: 49%;
+		left: 60%;
+	} 
+
+}
+
+
+@keyframes booo {
+
+
+	0% {
+		top: 37%;
+		left: 12%;
+		transform: scale(0, 0);
+	}
+	20% {
+		top: 37%;
+		left: 12%;
+		transform: scale(0, 0);
+
+	}
+
+	40% {
+		top: 37%;
+		left: 12%;
+		transform: scale(2, 2);
+		
+	}
+	70% { 
+		top: 37%;
+		left: 12%;
+		transform: scale(2, 2);
+		}
+
+	100%{ 
+		top: 37%;
+		left: 12%;
+		transform: scale(2, 2);
+		opacity: 0;
+		}
+	}
+
+
+@keyframes flag_anim1 {
+
+	0% { top: 90%;
+		left: 15%;
+		}
+
+
+	
+}
+
+
+
+@keyframes flag {
+
+	from {background-image: url(image/ping1.png);}
+    to {background-image: url(image/ping2.png);}
+
+}
+	
+
+
+@keyframes firstt {
+
+	from {background-color: yellow;}
+    to {background: transparent;}
+
+
+}
+
+
+
+
+	</style>
+
+</head>
+<body>
+
+<div class="animation">
+
+
+
+
+<img src="image/zabor.png" class="zab">
+
+<img src="image/PIGGY.png" class="piggy">
+
+<img src="https://pbs.twimg.com/profile_images/2405364381/5102uyrpp1yhev78tk3m.png" class="pingv">
+
+
+<img src="http://vignette3.wikia.nocookie.net/angrybirds/images/f/f7/ABMovie_Ross.png/revision/latest?cb=20160311065126" class="green">
+	
+<img src="http://vignette2.wikia.nocookie.net/angrybirds/images/e/e6/20130404-red.png/revision/latest?cb=20150817151339&path-prefix=ru" class="angr">
+
+<img src="image/booo.png" class="boo">
+
+	<table>
+
+
+<tr>
+	<td class="first"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><img src="image/zabor.png" class="zabor"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="first"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="first"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="first"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="first"></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+</tr>
+
+
+
+
+</table>
+
+<div class="column">
+
+
+			<div class="flag_anim" id="anim1">
+				<div class="flag">  </div>
+			</div>
+
+
+			<div class="flag_anim" id="anim2">
+				<div class="flag">  </div>
+			</div>
+
+
+			<div class="flag_anim" id="anim3">
+				<div class="flag">  </div>
+			</div>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
