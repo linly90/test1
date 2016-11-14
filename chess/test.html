@@ -1,0 +1,312 @@
+<!DOCTYPE HTML>
+
+
+
+<html>
+<head>
+<meta charset="utf-8" >
+<title> Заголовок </title>
+<meta name="description" content=" Уроки по html">
+    <style>
+
+
+
+        .board {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 560px;
+            height: 560px;
+            border: 1px solid black;
+        }
+        .row {
+            display: flex;
+            flex-direction: row;
+            width: 560px;
+            height: 70px;
+        }
+        .column {
+            flex-direction: column;
+            border: 1px solid black;
+            width: 70px;
+            height: 70px;
+        }
+        #invis {
+            width: 0px;
+            height: 0px;
+            border: 0px;
+        }
+
+
+        button {
+            width: 70px;
+            height: 50px;
+        }
+        img {
+            position:absolute;
+
+        }
+
+    </style>
+</head>
+<body>
+
+
+<div class="all">
+
+                    <div class="board">
+                        <div class="row"> <img src="img/peshka.png"  id="peshka1"/>
+                            <div class="column">1</div>
+                            <div class="column">2</div>
+                            <div class="column">3</div>
+                            <div class="column">4</div>
+                            <div class="column">5</div>
+                            <div class="column">6</div>
+                            <div class="column">7</div>
+                            <div class="column">8</div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column" id="invis"></div>
+                        </div>
+                        <div class="row">
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                            <div class="column"></div>
+                        </div>
+                    </div>
+
+
+    <div class="buttons">
+        <button id="up" value="up" onclick="up()">          up</button>
+        <button id="down" value="down" onclick="down()">    down</button>
+        <button id="left" value="left" onclick="left()">    left</button>
+        <button id="right" value="right" onclick="right()"> right</button>
+    </div>
+
+
+
+
+</div>
+
+
+<script>
+
+
+(function chessboard(){
+
+    var Cell = document.getElementsByClassName('column');
+
+            for (var i = 0; i < Cell.length; i++){
+                if ((i % 2 !== 0)){
+                    Cell[i].style.backgroundColor = "#000000";
+                }
+            }
+    }());
+
+//var x = 70;
+
+function right() {
+
+        var elem = document.getElementById("peshka1");
+        //var positionPeshka = elem.getBoundingClientRect();
+
+    var pos = 0;
+
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 70) {
+            clearInterval(id);
+            //return pos += 70;
+        } else {
+            pos++;
+            //elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+
+        }
+    }
+    console.log(pos)
+
+}
+
+
+
+
+
+
+
+function down() {
+
+    var elem = document.getElementById("peshka1");
+    var positionPeshka = elem.getBoundingClientRect();
+
+    var pos = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 70) {
+            clearInterval(id);
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            //elem.style.left = pos + 'px';
+
+        }
+    }
+
+
+}
+
+
+
+function left() {
+
+    var elem = document.getElementById("peshka1");
+    var positionPeshka = elem.getBoundingClientRect();
+
+    var pos = 70;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 0) {
+            clearInterval(id);
+        } else {
+            pos--;
+            //elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+
+        }
+    }
+
+
+}
+
+
+function up() {
+
+    var elem = document.getElementById("peshka1");
+   // var positionPeshka = elem.getBoundingClientRect();
+
+    var pos = 70;
+    var id = setInterval(frame, 5);
+    function frame() {
+        if (pos == 0) {
+            clearInterval(id);
+        } else {
+            pos--;
+            elem.style.top = pos + 'px';
+            //elem.style.left = pos + 'px';
+
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
