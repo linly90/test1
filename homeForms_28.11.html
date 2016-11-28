@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        form, #pay {
+            width: 600px;
+        }
+        h4 {
+            margin: 0px;
+            margin-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        .content_all, #pay_img {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .content_form {
+            display: flex;
+            justify-content: center;
+                    }
+        .location, #check, #date {
+            margin-bottom: 15px;
+        }
+
+        #no18 {
+            visibility: hidden;
+            margin-left: 5px;
+            font-size: 14px;
+            color:red;
+            font-weight: bold;
+        }
+        .check {
+            margin-left: 5px;
+            font-size: 14px;
+            color:red;
+            font-weight: bold;
+        }
+
+        .name_data {
+            display: flex;
+            flex-direction: row;
+        }
+        .name_data #FIO {
+            margin-right: 50px;
+
+        }
+
+        #nrw, .uk, #mgro {
+            display: none;
+        }
+
+
+
+
+
+        #accent {
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            background-color: rgba(255,128,82,0.5);
+            box-shadow: 20px 10px 20px grey;
+            display: none;
+            margin-top: 100px;
+        }
+
+        #lottery {
+            position: absolute;
+            margin-left: 300px;
+            background-color:  coral;
+            box-shadow: 20px 10px 20px grey;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        #lottery p {
+            text-align: center;
+        }
+
+
+
+        #pay {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+
+        #pay_img {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        #paypal_data, #mcard_data {
+            display: none;
+        }
+        .yaho {
+            position: absolute;
+            margin: 80px;
+            font-size: 36px;
+            font-weight: bold;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content_all">
+
+
+
+    <div id="accent"></div>
+
+
+
+    <div id="lottery">
+        <h3>LOTTERY</h3>
+        <p>push me!</p>
+    </div>
+
+    <div class="content_form">
+
+
+
+        <form>
+
+            <div class="name_data" name="name_data">
+
+
+                <div id="FIO">
+                    <p>Name:  </p>
+                    <p>Surname:    </p>
+                    <p>Middle-name:</p>
+                </div>
+
+
+                <div id="input_fio">
+                    <p id="pName"><input type="text" id="name" class="name_input" required > <p>
+                    <p id="pSurname"><input type="text" id="surname" class="name_input" required><p>
+                    <p id="pMiddle_name"><input type="text" id="middle_name"class="name_input" required><p>
+                </div>
+
+
+            </div>
+
+
+            <div class="location">
+                            <h4>Your location:</h4>
+
+                            <select id="countries" name="countries" >
+
+                                <option class="no_select" name="no_select">                    choose your country</option>
+                                <option id="uk_country" name="uk" data-index="1">           Ukraine</option>
+                                <option id="mgro_country" name="mgro" data-index="2">       Montenegro</option>
+                                <option id="nrw_country" name="nrw" data-index="3">         Norway</option>
+                                <!-- <option value="USA">         USA</option>-->
+
+                            </select>
+
+
+
+                            <select name="states" id ="states" >
+                                <option class="no_select" name="no_select">   your state</option>
+
+                                <option class="uk" name="uk">               Kiev</option>
+                                <option class="uk" name="uk">         Zaporizhia</option>
+                                <option class="uk" name="uk">               Lviv</option>
+                                <option class="uk" name="uk">            kharkiv</option>
+
+                                <option id="mgro" name="mgro">        Podgorica</option>
+                                <option id="mgro" name="mgro">          Cetinje</option>
+                                <option id="mgro" name="mgro">           Niksic</option>
+                                <option id="mgro" name="mgro">              Bar</option>
+
+                                <option id="nrw" name="nrw">          Akershus</option>
+                                <option id="nrw" name="nrw">          Buskerud</option>
+                                <option id="nrw" name="nrw">           Hedmark</option>
+                                <option id="nrw" name="nrw">   More og Romsdal</option>
+                            </select>
+
+
+
+            </div>
+
+
+            <div class="date">
+                <h4>Your birthday:</h4>
+                <input type="date" id="date">
+                <span id="no18">Нет 18? Попробуй позже! :)</span>
+            </div>
+
+
+            <div id="send">
+
+                <input type="checkbox" id="check">
+                <button disabled> Send </button>
+            </div>
+        </form>
+    </div>
+
+    <div id="pay">
+        <div id="pay_img">
+            <img src="http://www.luckymojo.com/mastercard-300x188.jpg">
+            <img src="http://logok.org/wp-content/uploads/2014/05/Paypal-logo-20141.png">
+        </div>
+        <div id="paypal_data">
+            <p>kzjdhjkzhgjzdlxfgggggggggggggggghfhgjzd</p>
+            <p>zdhfgjkhzdfjkgxfgggggggggggggghh</p>
+            <p>zdfgzdfjghjkdzfxfggggggggggggggggggggggggghhgjk</p>
+            <p>fdgzdfkljglzdfjxfggggggggggggggggggggggggggghgk</p>
+        </div>
+
+        <div id="mcard_data">
+            <p>kzjdhjkzhgjzdlfhgjzxfgggggggggggggggggggghd</p>
+            <p>zdhfgjkhzdfjkgh</p>
+            <p>zdfgzdfjghjkdzfhgjxfgggggggggggggggggggggggghk</p>
+            <p>fdgzdfkljglzdfjgkxfggggggggggggggggggggggggggh</p>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script>
+    //-------------CHECK NAME IMPUTS -----------------------------------------------
+    var nameInput = document.querySelector("#name");
+    var namePofInput = document.getElementById("pName");
+
+    var surnameInput = document.querySelector("#surname");
+    var surnamePofInput = document.getElementById("pSurname");
+
+    var middleNameInput = document.querySelector("#middle_name");
+    var middleNamePofInput = document.getElementById("pMiddle_name");
+
+
+    function checkNum (impName, NameP){
+        impName.addEventListener("blur", function (event) {
+            var val = event.currentTarget.value;
+
+            if(/\d/g.test(val)) {
+                var pName = NameP;
+                var span = document.createElement('span');
+                span.className= "check";
+                span.textContent = "что-то пошло не так!";
+                pName.appendChild(span);
+            }
+        })
+
+    }
+    checkNum (nameInput, namePofInput);
+    checkNum (surnameInput, surnamePofInput);
+    checkNum (middleNameInput, middleNamePofInput);
+
+    //-----------------------------PAY---------------------------------
+    var mcardData= document.querySelector("#mcard_data");
+    var paypalData= document.querySelector("#paypal_data");
+    document
+            .querySelectorAll("img")[1]
+            .addEventListener("click", function(event){
+                mcardData.style.display = "none";
+                paypalData.style.display = "block";
+
+            });
+
+    document
+            .querySelector("img")
+            .addEventListener("click", function(event){
+                paypalData.style.display = "none";
+                mcardData.style.display = "block";
+
+            });
+
+
+
+    //----------------------------ACCENT WINDOW---------------------------
+    var accentWindow = document.querySelector("#accent");
+    document.getElementById("lottery")
+            .addEventListener("click", function(event){
+
+                accentWindow.style.display = "block";
+
+                var day = (new Date).getDay();
+                var div = document.createElement('div');
+
+
+                if(day == 1){
+                    div.innerHTML = "Ура понедельник! Ты выиграл тапок!";
+                    div.className = "yaho";
+                    accent.appendChild(div)
+
+                }
+                else{
+                    div.innerHTML = "Спробуй ще!";
+                    div.className = "yaho";
+                    accent.appendChild(div)
+                }
+
+            });
+
+
+    //-----------SEND BUTTON--------------------------------------------
+    document.querySelector('#send')
+            .addEventListener('change', function(event){
+                var btn=document.querySelector('button');
+                var checkbox= document.getElementById('check');
+                btn.disabled =!checkbox.checked;
+            })
+
+    //----------------------PERSON'S AGE----------------------------------
+    var inputDate =  document.querySelector('#date');
+    inputDate.onblur = function(){
+
+        var currentDateText = inputDate.value;
+        var currentDate = new Date(currentDateText.replace(/(\d+)-(\d+)-(\d+)/, '$2/$3/$1'));
+        var nowDate = +new Date;
+
+        var age = Math.floor((nowDate - (+currentDate))/31536000000);
+        var message = document.getElementById("no18");
+
+
+        if(age < 18){
+            message.style.visibility = "visible";
+        }
+    }
+
+
+
+
+    /////-------------LOCATION-------------------------------------------------------
+    var form = document.forms[0];
+    var selectCountry = form.elements.countries;
+    var option = selectCountry.options;
+
+
+    var statesUk = document.querySelectorAll("select[name='states'] option[name='uk']");
+    var statesMgro = document.querySelectorAll("select[name='states'] option[name='mgro']");
+    var statesNrw = document.querySelectorAll("select[name='states'] option[name='nrw']");
+
+function location(parent, childUk, childNrw, childMgro) {
+    document.addEventListener("change", function(event){
+        if(parent.selectedIndex ==1){
+            for(var i= 0; i< childUk.length; i++){
+                childUk[i].style.display = "block";
+                childMgro[i].style.display = "none";
+                childNrw[i].style.display = "none";
+            }
+        };
+
+                if(parent.selectedIndex ==2){
+                    for(var i= 0; i< childMgro.length; i++){
+                        childMgro[i].style.display = "block";
+                        childUk[i].style.display = "none";
+                        childNrw[i].style.display = "none";
+                    }
+                };
+
+
+                if(parent.selectedIndex ==3){
+                    for(var i= 0; i< childNrw.length; i++){
+                        childNr[i].style.display = "block";
+                        childUk[i].style.display = "none";
+                        childMgro[i].style.display = "none";
+                    }
+                };
+    }
+    )}
+
+   location(selectCountry, statesUk, statesNrw, statesMgro);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
