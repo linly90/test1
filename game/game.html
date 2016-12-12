@@ -1,0 +1,157 @@
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+
+
+#contentGame {
+    display: flex;
+    flex-direction:row ;
+    width: 1200px;
+    height: 900px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+#contentMain {
+    width: 900px;
+    height: 700px;
+    border: 1px solid black;
+    background-image: url('images/oldTown.jpg');
+
+}
+
+    #bottomPanel {
+        display: flex;
+        justify-content: center;
+        align-items:  center;
+        width: 900px;
+        height: 200px;
+        border: 1px solid black;
+
+    }
+    #contentRight {
+        display: flex;
+        flex-direction: column;
+        align-items:  center;
+        justify-content: center;
+        width: 300px;
+        height: 700px;
+        border: 1px solid black;
+
+
+    }
+
+</style>
+
+</head>
+<body>
+<div id="contentGame">
+
+
+    <div id="contentLeft">
+        <div id="contentMain">
+
+                    <img alt="" usemap="#mapCat" id="cat"/>
+                    <map name="mapCat" id="mapCat">
+                        <area shape="poly" coords="29, 63, 41, 34, 69, 26, 91, 20, 106, 1, 124, 18, 126, 24, 162, 39, 174, 54, 180, 77, 222, 96, 244, 118, 260, 143, 266, 182, 260, 216, 279, 227, 288, 248, 295, 272, 296, 283, 276, 284, 251, 278, 229, 259, 222, 245, 191, 257, 187, 257, 198, 274, 188, 289, 176, 288, 152, 271, 160, 255, 111, 229, 98, 211, 96, 223, 94, 240, 83, 243, 66, 235, 61, 218, 59, 210, 75, 208, 75, 183, 69, 167, 58, 151, 31, 124, 24, 85" />
+                    </map>
+
+                    <img  alt="" usemap="#mapDreamCatch" id="dreamCatch"/>
+                    <map name="mapDreamCatch" id="mapJar">
+                        <area shape="poly" coords="187, 73, 198, 94, 189, 115, 192, 150, 197, 168, 186, 182, 183, 197, 188, 221, 173, 245, 159, 290, 139, 287, 124, 243, 109, 222, 116, 189, 104, 170, 94, 152, 96, 129, 90, 96, 109, 73, 150, 64, 150, 64" />
+                        <area shape="circle" coords="144, 61, 48" />
+                    </map>
+
+                    <img  alt="" usemap="#mapJar" id="jar"/>
+
+
+        </div>
+
+        <div id="bottomPanel"></div>
+    </div>
+    <div id="contentRight"></div>
+
+</div>
+
+
+<script>
+
+
+
+ var generalImgProperties = {
+    src: ["images/cat.png", "images/dreamsCatcher.png", "images/pitcher.png"],
+    name: ["cat", "dreamsCatcher", "jar"],
+    width: 300,
+    height:300
+ };
+
+
+
+
+ function createImgGeneral (){
+    var generalImages = document.querySelectorAll('#contentMain img');
+         for(var i=0; i<generalImages.length; i++){
+             generalImages[i].src= generalImgProperties.src[i];
+         }
+ }
+ createImgGeneral ()
+
+
+
+
+
+function createImgBotoom () {
+
+    for(var i=0; i<generalImgProperties.src.length; i++){
+
+    var img = document.createElement('img');
+    img.src = generalImgProperties.src[i];
+    img.width = 0.5*generalImgProperties.width;
+    img.height = 0.5*generalImgProperties.height;
+    document.getElementById('bottomPanel').appendChild(img);
+    }
+}
+ createImgBotoom ();
+
+
+
+ function createImgRight () {
+
+     for(var i=0; i<generalImgProperties.src.length; i++){
+
+         var img = document.createElement('img');
+         img.src = generalImgProperties.src[i];
+         img.width = 0.5*generalImgProperties.width;
+         img.height = 0.5*generalImgProperties.height;
+         img.style.opacity = 0.5;
+         document.getElementById('contentRight').appendChild(img);
+     }
+ }
+ createImgRight ();
+
+
+
+
+ /*
+
+     document.querySelector("#mapCat")
+             .addEventListener("click", function(e){
+                 console.log("fgdg")
+             })
+
+
+
+     document.querySelector("#mapDreamCatch")
+             .addEventListener("click", function(e){
+                 console.log("111111")
+             })
+
+     */
+
+</script>
+
+
+
+
+</body>
+</html>
