@@ -7,7 +7,7 @@
 
     var panel = [];
     var num_panel = random(0, imgMain.length-1);
-    console.log(num_panel)
+    //console.log(num_panel)
     for(var i=0; i<3; i++){
         var number= num_panel[i];
 
@@ -16,7 +16,7 @@
 
     }
 
-    console.log(panel[0][0])
+   // console.log(panel[0][0])
 
 
 
