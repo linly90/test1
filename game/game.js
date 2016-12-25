@@ -1,5 +1,9 @@
 
-    //var imgMapName= [];
+function random(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 
 
 
@@ -8,18 +12,8 @@
 //imgMain = Array.prototype.slice.call(imgMain);
 
 
-
-
-
-
-
-
-
-
-
-    var imgBottom = document.querySelectorAll('#bottomPanel img');
+   var imgBottom = document.querySelectorAll('#bottomPanel img');
     //var imgRight = document.querySelectorAll('#contentRight img');
-
    var main = document.getElementById('contentMain');
 
 
@@ -48,8 +42,6 @@
             }
         }
     });
-
-
 
 
 

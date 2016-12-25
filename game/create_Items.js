@@ -41,4 +41,4 @@ function Item (name, src, usemap, pozX, pozY){
 
 
 
-var imgMain = document.querySelectorAll('#contentMain img');
+var imgMain = $('#contentMain img');
