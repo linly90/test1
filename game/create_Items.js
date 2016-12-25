@@ -1,4 +1,7 @@
 
+
+var imgMainName = [];
+
 function Item (name, src, usemap, pozX, pozY){
     this.name = name;
     this.src= src;
@@ -14,6 +17,10 @@ function Item (name, src, usemap, pozX, pozY){
         imgMainName.push(img.name)
     }
 }
+
+
+
+
 
 
     var cat = new Item ("cat", "images/cat.png", "#cat","150", "370");
@@ -34,3 +41,4 @@ function Item (name, src, usemap, pozX, pozY){
 
 
 
+var imgMain = document.querySelectorAll('#contentMain img');
