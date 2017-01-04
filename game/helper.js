@@ -1,4 +1,19 @@
 
+
+
+document.querySelector("#helper")
+    .addEventListener("mouseover", function(event){
+
+        this.style.opacity = "0"
+    });
+
+document.querySelector("#helper")
+    .addEventListener("mouseout", function(event){
+
+        this.style.opacity = "1"
+    });
+
+
 document.querySelector("#helper")
         .addEventListener("click", function(){
 

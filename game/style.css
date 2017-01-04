@@ -40,7 +40,7 @@
         align-items:  center;
         justify-content: center;
         width: 150px;
-        height: 600px;
+        height: 500px;
         border: 1px solid black;
 
 
@@ -52,18 +52,25 @@
         height: 100px;
     }
 
-
-
-
-
-
-
+    #timer {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+    }
 
 
     #helper {
-       height: 100px;
-       margin-left: 23px;
+        position: absolute;
+        opacity: 1;
     }
+
+
+
+
+
+
+
+
 
     #contentMain #rot {
         position: absolute;
