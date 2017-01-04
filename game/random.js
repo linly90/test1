@@ -19,3 +19,14 @@ function random (min, max) {
 
 
 
+
+
+
+
+function getRandom(min, max)
+{
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+
+

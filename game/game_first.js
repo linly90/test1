@@ -21,7 +21,7 @@
         if (currTarget.tagName != 'MAP'){
 
             var currentName = currTarget.parentNode.getAttribute('name');
-            console.log(currentName)
+            console.log(currentName);
 
             if(imgBottomName.indexOf(currentName) != -1){
 

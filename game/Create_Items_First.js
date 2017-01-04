@@ -5,6 +5,11 @@ function Item (name, src, usemap, pozX, pozY){
     this.name = name;
     this.src= src;
     this.usemap = usemap;
+
+
+    var rand = getRandom(0, pozX.length-1)
+
+
     this.drawImg = function(){
         var img = document.createElement('img');
         img.src = this.src;

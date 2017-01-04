@@ -6,50 +6,59 @@ var secHtml = $(".sec");
 
 
 
-//console.log(secHtml[0])
+
+
+
+
+document.querySelector("button")
+        .addEventListener("click", function(){
+
+           runMin ();
+        });
+
 
 
 function runMin (){
-    var min = 2;
-    runSec  ();
 
+    var point = document.querySelector("#points");
 
-    var timerMin= setInterval(function() {
-        // console.log(min);
-        minHtml[0].innerHTML = min;
-        if (min == 0){
-            clearInterval(timerMin);
-        }
-        else {
-            min--;
-            minHtml[0].innerHTML = min;
-            runSec  ()
-        }
-    }, 60000);    //60000
+    var secAll = 120;
 
+    var min = 1;
 
-}
-
-runMin ()
-
-
-
-
-function runSec (){
     var sec = 60;
-    var timer= setInterval(function() {
-        console.log(sec)
-        secHtml[0].innerHTML = sec;
-        if (sec == 0) clearInterval(timer);
-        sec--
-    }, 1000);
+    var timerSec= setInterval(function() {
+        // console.log(min);
+
+        point.innerText = " : ";
+        minHtml[0].innerHTML = min;
+        secHtml[0].innerHTML = Math.floor(sec);
+        if (secAll < 0){
+            clearInterval(timerSec);
+            alert("haha!")
+
+        }
+
+
+        else if (secAll == 60){
+
+            minHtml[0].innerHTML = min;
+            secHtml[0].innerHTML = Math.floor(sec);
+            min--;
+            sec =60;
+
+        }
+
+
+        sec--;
+        secAll--;
+    }, 1000);    //60000
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
 
 

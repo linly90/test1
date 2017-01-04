@@ -35,8 +35,27 @@
         align-items:  center;
         justify-content: center;
         width: 150px;
-        height: 700px;
+        height: 600px;
         border: 1px solid black;
 
 
+    }
+
+    #contRight_help {
+        border: 1px solid black;
+        width: 150px;
+        height: 100px;
+    }
+
+
+
+
+
+
+
+
+
+    #helper {
+       height: 100px;
+       margin-left: 23px;
     }

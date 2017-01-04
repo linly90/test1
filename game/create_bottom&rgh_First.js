@@ -17,10 +17,10 @@ for(var i=0; i<3; i++){
 
 }
 
- console.log(num_panel)
+ //console.log(num_panel)
 
-console.log(imgMain)
-console.log(panel)
+//console.log(imgMain)
+//console.log(panel)
 
 function createImgBotoom () {
 
@@ -41,7 +41,7 @@ function createImgBotoom () {
 
 
 
-console.log(imgBottomName)
+//console.log(imgBottomName)
 
 
 function createImgRight () {
@@ -61,46 +61,3 @@ function createImgRight () {
 
 
 
-
-
-
-/*
-
-function createImgBotoom () {
-
-    for(var i=0; i<imgMain.length; i++){
-
-
-        var img = document.createElement('img');
-        img.src = imgMain[i].src;
-        img.name = imgMain[i].name;
-        document.getElementById('bottomPanel').appendChild(img);
-        img.style.width = '100';
-        img.style.height = '100';
-
-        imgBottomName.push(img.name)
-    }
-}createImgBotoom ();
-
-
-
-
-
-
-function createImgRight () {
-
-    for(var i=0; i<imgMain.length; i++){
-
-        var img = document.createElement('img');
-        img.src = imgMain[i].src;
-        img.name = imgMain[i].name;
-        img.id = imgMain[i].name;
-        img.style.width = '100';
-        img.style.opacity = 0.3;
-        document.getElementById('contentRight').appendChild(img);
-        imgRightName.push(img.name)
-    }
-} createImgRight ();
-
-
-*/
