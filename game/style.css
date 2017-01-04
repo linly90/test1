@@ -1,8 +1,13 @@
 
-    #contentMain img  {
+
+#contentMain img  {
     position: absolute;
     z-index: 0;
+
+
 }
+
+
 
 #contentGame {
     display: flex;
@@ -59,3 +64,36 @@
        height: 100px;
        margin-left: 23px;
     }
+
+    #contentMain #rot {
+        position: absolute;
+        z-index: 1;
+        width: 200px;
+        animation-name: rotation;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+
+
+    @keyframes rotation {
+        0% {transform:rotate(0deg);
+            opacity: 0.1;
+            width: 100px;
+            }
+        30% {opacity: 0.9;
+            width: 200px;
+            }
+        60% {opacity: 0.9;
+            width: 200px;
+        }
+
+        100% {transform:rotate(360deg);
+            opacity: 0.1;
+            width: 100px;
+        }
+    }
+
+
+
