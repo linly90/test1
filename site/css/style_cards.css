@@ -1,0 +1,164 @@
+
+
+
+
+.card   {
+
+    perspective: 700px;
+    perspective-origin: 10px 70px;
+
+
+}
+.card-cont{
+    position: relative;
+    min-height: 200px;
+
+}
+.card-cont-z {
+    margin-left: 200px;
+    min-height: 300px;
+}
+.card-cont p {
+    position: absolute;
+    top: 0;
+    left:100px;
+
+    padding: 20px;
+    margin:0;
+    min-width: 500px;
+
+
+    background: rgba(255,255,255,0.3);
+    border-radius: 5%;
+
+
+}
+
+.show-card{
+    position: absolute;
+    top: 20px;
+
+
+    transform: rotateY(20deg)
+    rotateX(70deg)
+    matrix(1.2, -0.6, 0, 1, 0, 0);
+
+    box-shadow: -3px 5px 20px rgba(0, 0, 0, .5);
+
+}
+
+
+
+
+
+
+
+.p-initial {
+    animation-name: p-initial;
+    animation-duration: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+
+.card-right {
+
+    transform: matrix(0.6, 0.1, 0, 0.6, 0, 0);
+
+    box-shadow: -3px 5px 20px rgba(0, 0, 0, .5);
+
+}
+
+.cards-right div {
+    width: 260px;
+    height:200px;
+    opacity: 0;
+    margin-left: 10px;
+    margin-right: 40px;
+    display: inline-block;
+    }
+
+
+
+.cards-right-anim {
+    opacity: 1;
+    animation-name: cards-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+
+
+
+
+
+
+
+}
+.cards-right-anim img {
+    border-radius: 0;
+    filter: blur(0px);
+    transition: border-radius 1s, filter 1s;
+}
+.cards-right-anim img:hover {
+    border-radius: 20%;
+    filter: blur(3px);
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes cards-right {
+    from {
+        transform: translate3d(100%, 0, 0) skewX(-30deg);
+        opacity: 0;
+    }
+
+    60% {
+        transform: skewX(20deg);
+        opacity: 1;
+    }
+
+    80% {
+        transform: skewX(-5deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes p-initial {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}

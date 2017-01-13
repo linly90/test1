@@ -1,0 +1,116 @@
+        svg {
+            padding-top: 60px;
+            padding-left: 10px;
+
+        }
+        path {
+
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 1s linear forwards;
+
+        }
+        @keyframes dash {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+
+        #circles-row1 div, #circles-row2 div{
+            margin: 5px;
+            display: inline-block;
+            width: 210px;
+            text-shadow: 10px 10px 15px black;
+
+            position: relative;
+
+            transition: text-shadow 1s;
+
+        }
+
+
+        #circles-row1 div:hover , #circles-row2 div:hover {
+            text-shadow: 2px 2px 40px white;
+        }
+
+
+
+        .circle-center {
+            opacity: 1;
+            animation-name: opacity;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes opacity {
+            from{opacity: 0;}
+            to{opacity: 1;}
+        }
+
+        #circles-row1, #circles-row2 {
+            padding: 0;
+            margin: 0;
+            width: 450px;
+
+
+
+        }
+
+
+
+
+        .circle-content{
+            color: white;
+            position: absolute;
+            top: 90px;
+            left: 50px;
+            padding: 20px;
+
+
+            opacity: 1;
+            animation-name: opacityText;
+            animation-duration: 1.5s;
+        }
+
+
+        @keyframes opacityText {
+
+            from {
+                opacity: 0;
+                transform: scale3d(1, 1, 1);
+            }
+
+            30% {
+                opacity:0.2;
+                transform: scale3d(1.25, 0.75, 1);
+            }
+
+            40% {
+                opacity:0.4;
+                transform: scale3d(0.75, 1.25, 1);
+            }
+
+            50% {
+                opacity:0.6;
+                transform: scale3d(1.15, 0.85, 1);
+            }
+
+            65% {
+                opacity:0.8;
+                transform: scale3d(.95, 1.05, 1);
+            }
+
+            75% {
+                opacity:1;
+                transform: scale3d(1.05, .95, 1);
+            }
+
+            to {
+                opacity:1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+
+
+
